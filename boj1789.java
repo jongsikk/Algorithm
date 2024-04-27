@@ -8,14 +8,11 @@ public class boj1789 {
         long s = Long.parseLong(reader.readLine());
         long count = 0;
         long sum = 0;
-        // if (s == 1) {
-        // System.out.println(1);
-        // } else {
         while (sum <= s) {
             count++;
             sum += count;
         }
         System.out.println(count - 1);
-        // }
+
     }
 }
