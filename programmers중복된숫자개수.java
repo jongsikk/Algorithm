@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class programmers중복된숫자개수 {
+    class Solution {
+        public int solution(int[] array, int n) {
+            int answer = 0;
+            Arrays.sort(array);
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] != n) {
+                    if (array[i] > n) {
+                        break;
+                    } else {
+                        continue;
+                    }
+                } else {
+                    answer++;
+                }
+            }
+
+            return answer;
+        }
+    }
+}
